@@ -1,13 +1,9 @@
 import { Link } from "@remix-run/react";
-import { useFrame, Canvas } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { useOptionalUser } from "~/utils";
 
 export default function Index() {
   const user = useOptionalUser();
-
-  // useFrame(() => {
-  //   console.log("hey");
-  // });
 
   return (
     <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
@@ -36,12 +32,6 @@ export default function Index() {
           </div>
         )}
       </div> */}
-      {/* <Canvas>
-        <mesh>
-          <boxGeometry />
-          <meshBasicMaterial color="royalblue" />
-        </mesh>
-      </Canvas> */}
     </main>
   );
 }
